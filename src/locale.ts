@@ -4,6 +4,7 @@ import { enUS as UniverDocsUIEnUS } from "@univerjs/docs-ui";
 import { enUS as UniverSheetsEnUS } from "@univerjs/sheets";
 import { enUS as UniverSheetsUIEnUS } from "@univerjs/sheets-ui";
 import { enUS as UniverUiEnUS } from "@univerjs/ui";
+import { enUS as UniverSheetsCustomMenuEnUS } from "./plugin";
 
 export const locales = {
   [LocaleType.EN_US]: {
@@ -12,5 +13,6 @@ export const locales = {
     ...UniverSheetsUIEnUS,
     ...UniverUiEnUS,
     ...UniverDesignEnUS,
+    ...UniverSheetsCustomMenuEnUS,
   },
 };

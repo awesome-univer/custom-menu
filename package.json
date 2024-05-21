@@ -1,28 +1,40 @@
 {
-  "name": "univer-sheets-vite",
+  "name": "univer-sheets-custom-menu",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@univerjs/core": "^0.1.11",
-    "@univerjs/design": "^0.1.11",
-    "@univerjs/docs": "^0.1.11",
-    "@univerjs/docs-ui": "^0.1.11",
-    "@univerjs/engine-formula": "^0.1.11",
-    "@univerjs/engine-numfmt": "^0.1.11",
-    "@univerjs/engine-render": "^0.1.11",
-    "@univerjs/facade": "^0.1.11",
-    "@univerjs/sheets": "^0.1.11",
-    "@univerjs/sheets-formula": "^0.1.11",
-    "@univerjs/sheets-ui": "^0.1.11",
-    "@univerjs/ui": "^0.1.11"
+    "@univerjs/core": "nightly",
+    "@univerjs/design": "nightly",
+    "@univerjs/docs": "nightly",
+    "@univerjs/docs-ui": "nightly",
+    "@univerjs/engine-formula": "nightly",
+    "@univerjs/engine-numfmt": "nightly",
+    "@univerjs/engine-render": "nightly",
+    "@univerjs/facade": "nightly",
+    "@univerjs/sheets": "nightly",
+    "@univerjs/sheets-formula": "nightly",
+    "@univerjs/sheets-ui": "nightly",
+    "@univerjs/ui": "nightly",
+    "@wendellhu/redi": "^0.15.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "typescript": "^5.4.5",
-    "vite": "^5.2.10"
+    "vite": "^5.2.10",
+    "@types/react": "^18.2.58",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5"
   }
 }

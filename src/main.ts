@@ -14,6 +14,7 @@ import { UniverSheetsPlugin } from "@univerjs/sheets";
 import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
+import { UniverSheetsCustomMenuPlugin } from "./plugin";
 
 const univer = new Univer({
   theme: defaultTheme,
@@ -36,6 +37,9 @@ univer.registerPlugin(UniverDocsUIPlugin);
 univer.registerPlugin(UniverSheetsPlugin);
 univer.registerPlugin(UniverSheetsUIPlugin);
 univer.registerPlugin(UniverSheetsFormulaPlugin);
+
+// custom menu plugin
+univer.registerPlugin(UniverSheetsCustomMenuPlugin);
 
 // create univer sheet instance
 univer.createUnit(UniverInstanceType.UNIVER_SHEET, {});
