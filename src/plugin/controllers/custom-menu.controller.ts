@@ -1,5 +1,5 @@
 import { Disposable, ICommandService, LifecycleStages, OnLifecycle } from '@univerjs/core';
-import { ComponentManager, IUIPartsService } from '@univerjs/ui';
+import { ComponentManager } from '@univerjs/ui';
 import type { IMenuItemFactory } from '@univerjs/ui';
 import { IMenuService } from '@univerjs/ui';
 import { Inject, Injector } from '@wendellhu/redi';
