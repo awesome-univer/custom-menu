@@ -18,7 +18,7 @@ import { LocaleService, Plugin, UniverInstanceType } from '@univerjs/core';
 import type { Dependency } from '@wendellhu/redi';
 import { Inject, Injector } from '@wendellhu/redi';
 
-import { zhCN } from './locale';
+import { zhCN, enUS } from './locale';
 import { CustomMenuController } from './controllers/custom-menu.controller';
 
 const SHEET_CUSTOM_MENU_PLUGIN = 'SHEET_CUSTOM_MENU_PLUGIN';
@@ -35,6 +35,7 @@ export class UniverSheetsCustomMenuPlugin extends Plugin {
 
         this._localeService.load({
             zhCN,
+            enUS
         });
     }
 
