@@ -12,7 +12,7 @@ import { ItemIcon } from '../components/item-icon/ItemIcon';
 import { CustomMenuItemDropdownListFirstItemFactory, CustomMenuItemDropdownListMainButtonFactory, CustomMenuItemDropdownListSecondItemFactory } from './menu/dropdown-list.menu';
 import { DropdownListFirstItemOperation, DropdownListSecondItemOperation } from '../commands/operations/dropdown-list.operation';
 
-@OnLifecycle(LifecycleStages.Steady, CustomMenuController)
+@OnLifecycle(LifecycleStages.Ready, CustomMenuController)
 export class CustomMenuController extends Disposable {
     constructor(
         @Inject(Injector) private readonly _injector: Injector,
