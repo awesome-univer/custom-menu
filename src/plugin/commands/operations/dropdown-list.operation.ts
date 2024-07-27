@@ -1,6 +1,5 @@
-import type { ICommand } from '@univerjs/core';
+import type { ICommand, IAccessor } from '@univerjs/core';
 import { CommandType } from '@univerjs/core';
-import type { IAccessor } from '@wendellhu/redi';
 
 export const DropdownListFirstItemOperation: ICommand = {
     id: 'custom-menu.operation.dropdown-list-first-item',

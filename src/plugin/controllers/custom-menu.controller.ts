@@ -1,8 +1,7 @@
-import { Disposable, ICommandService, LifecycleStages, OnLifecycle } from '@univerjs/core';
+import { Disposable, ICommandService, LifecycleStages, OnLifecycle, Inject, Injector } from '@univerjs/core';
 import { ComponentManager } from '@univerjs/ui';
 import type { IMenuItemFactory } from '@univerjs/ui';
 import { IMenuService } from '@univerjs/ui';
-import { Inject, Injector } from '@wendellhu/redi';
 
 import { CustomMenuItemSingleButtonFactory } from './menu/single-button.menu';
 import { SingleButtonOperation } from '../commands/operations/single-button.operation';
@@ -62,7 +61,7 @@ export class CustomMenuController extends Disposable {
                 CustomMenuItemDropdownListSecondItemFactory
             ] as IMenuItemFactory[]
         ).forEach((factory) => {
-            this.disposeWithMe(this._menuService.addMenuItem(this._injector.invoke(factory)));
+            this.disposeWithMe(this._menuService.addMenuItem(this._injector.invoke(factory), {}));
         });
     }
 }

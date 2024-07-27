@@ -9,28 +9,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@univerjs/core": "^0.1.17",
-    "@univerjs/design": "^0.1.17",
-    "@univerjs/docs": "^0.1.17",
-    "@univerjs/docs-ui": "^0.1.17",
-    "@univerjs/engine-formula": "^0.1.17",
-    "@univerjs/engine-numfmt": "^0.1.17",
-    "@univerjs/engine-render": "^0.1.17",
-    "@univerjs/facade": "^0.1.17",
-    "@univerjs/sheets": "^0.1.17",
-    "@univerjs/sheets-formula": "^0.1.17",
-    "@univerjs/sheets-ui": "^0.1.17",
-    "@univerjs/ui": "^0.1.17",
-    "@wendellhu/redi": "^0.15.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@univerjs/core": "0.2.5",
+    "@univerjs/design": "0.2.5",
+    "@univerjs/docs": "0.2.5",
+    "@univerjs/docs-ui": "0.2.5",
+    "@univerjs/engine-formula": "0.2.5",
+    "@univerjs/engine-numfmt": "0.2.5",
+    "@univerjs/engine-render": "0.2.5",
+    "@univerjs/facade": "0.2.5",
+    "@univerjs/sheets": "0.2.5",
+    "@univerjs/sheets-formula": "0.2.5",
+    "@univerjs/sheets-ui": "0.2.5",
+    "@univerjs/ui": "0.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.58",
-    "@types/react-dom": "^18.2.19",
-    "@univerjs/vite-plugin": "^0.4.4",
-    "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.12"
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@univerjs/vite-plugin": "^0.5.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
   }
 }

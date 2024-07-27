@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-import { LocaleService, Plugin, UniverInstanceType } from '@univerjs/core';
-import type { Dependency } from '@wendellhu/redi';
-import { Inject, Injector } from '@wendellhu/redi';
+import { LocaleService, Plugin, Inject, Injector, UniverInstanceType } from '@univerjs/core';
+import type { Dependency } from '@univerjs/core';
 
 /**
  * The ability to import locales from virtual modules and automatically import styles is provided by Univer Plugins. For more details, please refer to: https://univer.ai/guides/sheet/advanced/univer-plugins.
