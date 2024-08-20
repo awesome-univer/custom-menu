@@ -63,5 +63,8 @@ export class CustomMenuController extends Disposable {
         ).forEach((factory) => {
             this.disposeWithMe(this._menuService.addMenuItem(this._injector.invoke(factory), {}));
         });
+
+        console.log(this._menuService.getMenuItem('custom-menu.operation.dropdown-list'))
+        console.log(this._menuService.getMenuItem('custom-menu.operation.single-button'))
     }
 }

@@ -1,5 +1,6 @@
 import type { IMenuButtonItem, IMenuSelectorItem } from '@univerjs/ui';
-import { MenuItemType, MenuPosition } from '@univerjs/ui';
+import {  MenuItemType, MenuPosition } from '@univerjs/ui';
+import { Observable } from 'rxjs';
 
 import { DropdownListFirstItemOperation, DropdownListSecondItemOperation } from '../../commands/operations/dropdown-list.operation';
 
@@ -15,9 +16,11 @@ export function CustomMenuItemDropdownListMainButtonFactory(): IMenuSelectorItem
         tooltip: 'customMenu.dropdownList',
         title: 'customMenu.dropdown',
         positions: [MenuPosition.TOOLBAR_START, MenuPosition.CONTEXT_MENU],
+        hidden$: new Observable(function (subscribe) {
+            subscribe.next(false);
+        })
     };
 }
-
 
 export function CustomMenuItemDropdownListFirstItemFactory(): IMenuButtonItem<string> {
     return {

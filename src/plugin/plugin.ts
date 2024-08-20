@@ -24,7 +24,8 @@ import type { Dependency } from '@univerjs/core';
  * 【从虚拟模块导入语言包】以及【自动导入样式】是由 Univer Plugins 提供的能力，详情参考：https://univer.ai/zh-CN/guides/sheet/advanced/univer-plugins
  * 如果您在使用该插件的时候出现了问题，或者无法理解如何使用，请禁用 Univer Plugins，并手动导入语言包和样式
  */
-import { zhCN, enUS } from './locale';
+import zhCN from './locale/zh-CN';
+import enUS from './locale/en-US';
 import { CustomMenuController } from './controllers/custom-menu.controller';
 
 const SHEET_CUSTOM_MENU_PLUGIN = 'SHEET_CUSTOM_MENU_PLUGIN';
