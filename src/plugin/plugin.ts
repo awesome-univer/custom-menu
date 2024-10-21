@@ -46,9 +46,13 @@ export class UniverSheetsCustomMenuPlugin extends Plugin {
         });
     }
 
-    override onStarting(injector: Injector): void {
+    override onStarting(): void {
         ([
             [CustomMenuController],
-        ] as Dependency[]).forEach((d) => injector.add(d));
+        ] as Dependency[]).forEach((d) => this._injector.add(d));
+    }
+
+    onReady(): void {
+        this._injector.get(CustomMenuController);
     }
 }

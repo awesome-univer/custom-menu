@@ -1,4 +1,4 @@
-import { Disposable, ICommandService, LifecycleStages, OnLifecycle, Inject, Injector } from '@univerjs/core';
+import { Disposable, ICommandService, Inject, Injector } from '@univerjs/core';
 import { ComponentManager, ContextMenuGroup, ContextMenuPosition, IMenuManagerService, RibbonOthersGroup, RibbonStartGroup } from '@univerjs/ui';
 import type { IMenuItemFactory } from '@univerjs/ui';
 import { IMenuService } from '@univerjs/ui';
@@ -11,7 +11,6 @@ import { ItemIcon } from '../components/item-icon/ItemIcon';
 import { CUSTOM_MENU_DROPDOWN_LIST_OPERATION_ID, CustomMenuItemDropdownListFirstItemFactory, CustomMenuItemDropdownListMainButtonFactory, CustomMenuItemDropdownListSecondItemFactory } from './menu/dropdown-list.menu';
 import { DropdownListFirstItemOperation, DropdownListSecondItemOperation } from '../commands/operations/dropdown-list.operation';
 
-@OnLifecycle(LifecycleStages.Ready, CustomMenuController)
 export class CustomMenuController extends Disposable {
     constructor(
         @Inject(Injector) private readonly _injector: Injector,

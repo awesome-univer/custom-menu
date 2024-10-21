@@ -8,6 +8,7 @@ import { UniverFormulaEnginePlugin } from "@univerjs/engine-formula";
 import { UniverRenderEnginePlugin } from "@univerjs/engine-render";
 import { UniverSheetsPlugin } from "@univerjs/sheets";
 import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
+import { UniverSheetsFormulaUIPlugin } from "@univerjs/sheets-formula-ui";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
 import { UniverSheetsCustomMenuPlugin } from "./plugin";
@@ -46,6 +47,7 @@ univer.registerPlugin(UniverDocsUIPlugin);
 univer.registerPlugin(UniverSheetsPlugin);
 univer.registerPlugin(UniverSheetsUIPlugin);
 univer.registerPlugin(UniverSheetsFormulaPlugin);
+univer.registerPlugin(UniverSheetsFormulaUIPlugin);
 
 // custom menu plugin
 univer.registerPlugin(UniverSheetsCustomMenuPlugin);
